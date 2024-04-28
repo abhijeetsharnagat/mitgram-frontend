@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+     {
+       "source": "/api/:path*",
+       "destination": "https://college-portal-backend-1.onrender.com/api/:path*"
+     }
+  ]
+ }
+ 

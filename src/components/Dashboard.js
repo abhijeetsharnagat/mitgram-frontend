@@ -172,7 +172,7 @@ function Dashboard() {
               </CardContent>
               <CardMedia
                 component="img"
-                image={`http://localhost:5000/api/posts/images/${post.image}`}
+                image={`https://college-portal-backend-1.onrender.com/api/posts/images/${post.image}`}
                 alt={post.title}
                 sx={{ objectFit: 'contain', maxHeight: 500 }}
               />

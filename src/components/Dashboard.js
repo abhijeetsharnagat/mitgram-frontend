@@ -1,3 +1,4 @@
+// Dashboard.js
 import React, { useState, useEffect } from 'react';
 import {
   Container,
@@ -18,6 +19,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import CommentIcon from '@mui/icons-material/Comment';
 import SendIcon from '@mui/icons-material/Send';
+import OurCommunity from '../components/OurCommunity'; // Import the OurCommunity component
 
 function Dashboard() {
   const [postTitle, setPostTitle] = useState('');
@@ -123,11 +125,15 @@ function Dashboard() {
     }
   };
 
+  const handleExploreCommunity = () => {
+    navigate('/our-community');
+  };
+
   return (
     <Box sx={{ bgcolor: 'background.default', color: 'text.primary', minHeight: '100vh' }}>
       <Container maxWidth="md" sx={{ py: 8 }}>
         <Typography variant="h4" component="h1" gutterBottom>
-          ADPU Feed
+          GENIX Feed
         </Typography>
         <form onSubmit={handlePostSubmit} encType="multipart/form-data">
           <TextField
@@ -172,7 +178,7 @@ function Dashboard() {
               </CardContent>
               <CardMedia
                 component="img"
-                image={`https://college-portal-backend-1.onrender.com/api/posts/images/${post.image}`}
+                image={`http://localhost:5000/api/posts/images/${post.image}`}
                 alt={post.title}
                 sx={{ objectFit: 'contain', maxHeight: 500 }}
               />
@@ -193,6 +199,9 @@ function Dashboard() {
             </Card>
           ))}
         </Box>
+        <Button variant="contained" color="primary" sx={{ mt: 2, mb: 2 }} onClick={handleExploreCommunity}>
+          Explore Our Community
+        </Button>
       </Container>
     </Box>
   );

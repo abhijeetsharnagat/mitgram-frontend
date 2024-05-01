@@ -4,6 +4,7 @@ import DandianightImage from '../images/dandianight.jpeg';
 import facultiesImage from '../images/faculties.jpeg';
 import studImages from '../images/studentsandteachersgrouppics.jpeg';
 import testImages from '../images/test.jpeg';
+//
 
 // Import keyframes and styled from styled-components
 import { keyframes, styled } from 'styled-components';

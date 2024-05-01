@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography, Box, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 import DandianightImage from '../images/dandianight.jpeg';
 import facultiesImage from '../images/faculties.jpeg';
-import independceImage from '../images/independence daycelebration.jpeg';
+import independceImage from '../images/independencedaycelebration.jpeg';
 import studImages from '../images/studentsandteachersgrouppics.jpeg';
 import testImages from '../images/test.jpeg';
 

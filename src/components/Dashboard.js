@@ -12,6 +12,8 @@ import {
   CardActions,
   IconButton,
   Avatar,
+  AppBar,
+  Toolbar,
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
@@ -131,6 +133,28 @@ function Dashboard() {
 
   return (
     <Box sx={{ bgcolor: 'background.default', color: 'text.primary', minHeight: '100vh' }}>
+      <AppBar position="static" sx={{ backgroundColor: 'black', color: 'white' }}>
+        <Toolbar sx={{ padding: '0 1rem' }}>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 'bold', fontSize: '1.25rem' }}>
+            GENIX Feed
+          </Typography>
+          <IconButton
+            color="inherit"
+            aria-label="Explore Our Community"
+            onClick={handleExploreCommunity}
+            edge="end"
+            sx={{
+              color: 'white',
+              transition: 'color 0.3s ease',
+              '&:hover': {
+                color: 'silver',
+              },
+            }}
+          >
+            Explore Our Community
+          </IconButton>
+        </Toolbar>
+      </AppBar>
       <Container maxWidth="md" sx={{ py: 8 }}>
         <Typography variant="h4" component="h1" gutterBottom>
           GENIX Feed
@@ -199,9 +223,6 @@ function Dashboard() {
             </Card>
           ))}
         </Box>
-        <Button variant="contained" color="primary" sx={{ mt: 2, mb: 2 }} onClick={handleExploreCommunity}>
-          Explore Our Community
-        </Button>
       </Container>
     </Box>
   );

@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Typography, Box, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 import DandianightImage from '../images/dandianight.jpeg';
 import facultiesImage from '../images/faculties.jpeg';
-import independceImage from '../images/independencedaycelebration.jpeg';
 import studImages from '../images/studentsandteachersgrouppics.jpeg';
 import testImages from '../images/test.jpeg';
 
@@ -78,25 +77,6 @@ function OurCommunity() {
               </Typography>
               <Typography variant="body2" align="center">
                 Meet our dedicated faculty, including IIT graduates and PhD holders, committed to your success. Learn from the best and excel in your studies.
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </CardHover>
-        <CardHover sx={{ maxWidth: 500, mt: 4 }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="400"
-              image={independceImage}
-              alt="Independence Day Celebration"
-              sx={{ borderRadius: '8px', boxShadow: '0px 2px 4px rgba(0, 0, 0, 0.1)' }}
-            />
-            <CardContent>
-              <Typography variant="h6" component="h2" gutterBottom>
-                Independence Day Celebration
-              </Typography>
-              <Typography variant="body2" align="center">
-                Celebrate the spirit of independence and unity with us. A day to honor our nation's heritage and foster a sense of community.
               </Typography>
             </CardContent>
           </CardActionArea>
